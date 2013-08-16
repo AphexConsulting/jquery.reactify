@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body { background-color: #666; color: #eee; }
+    </style>
+    <meta name="viewport" content="width=320">
+  </head>
+<body>
+  <div>
+    jquery.reactify makes browser click events trigger immediately on iOS and Android. Try this page on Android or iOS.
+  </div>
+  
+  <input type="button" id="button1" value="Reactified button">
+  <input type="button" id="button2" value="Normal button">
+  
+  <div id="message"></div>
+  
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="jquery.reactify.js"></script>
+  <script>
+    $(function() {
+      var c = 0;
+      $('#button1').off('click');
+      $('#button1').on('click', function() {
+        $('#message').text('This button click is triggered immediately. (Clicked ' + ++c + ' times.)');
+      });
+      $('#button1').reactify(); // enable reactify for button 1
+
+      $('#button2').off('click');
+      $('#button2').on('click', function() {
+        $('#message').text('This button click is triggered not triggered immediately.');
+      });
+    });
+  </script>
+</body>
+</html>
