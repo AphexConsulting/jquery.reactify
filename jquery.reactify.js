@@ -65,9 +65,6 @@ $(function () {
         }
       },
       'mousemove.reactify touchmove.reactify touchcancel.reactify': function(event) {
-        if (event.type === 'touchmove' && info.down) {
-          event.preventDefault();
-        }
         if (isTouch && event.type == 'mousemove') return;
         if (info.down) {
           var dx = info.down.x - (event.type === 'mousemove' ? event.clientX : event.originalEvent.touches[0].pageX);
