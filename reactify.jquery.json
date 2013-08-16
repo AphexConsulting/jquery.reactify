@@ -1,0 +1,36 @@
+{
+    "name": "reactify",
+    "title": "jQuery Reactify",
+    "description": "jQuery plugin that makes browser click events trigger immediately on iOS and Android..",
+    "keywords": [
+        "mobile",
+        "android",
+        "ios",
+        "click",
+        "event"
+    ],
+    "version": "0.0.1",
+    "author": {
+        "name": "Aphex Consulting",
+        "url": "https://github.com/AphexConsulting/jquery.reactify"
+    },
+    "maintainers": [
+        {
+            "name": "John Kavaleff",
+            "email": "john.kavaleff@aphex.fi"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/AphexConsulting/jquery.reactify/blob/master/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/AphexConsulting/jquery.reactify/issues",
+    "homepage": "https://github.com/AphexConsulting/jquery.reactify",
+    "docs": "https://github.com/AphexConsulting/jquery.reactify",
+    "download": "https://github.com/AphexConsulting/jquery.reactify",
+    "dependencies": {
+        "jquery": ">=1.9"
+    }
+}
